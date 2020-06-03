@@ -1,3 +1,5 @@
+package com.epam.utils;
+
 import static org.apache.commons.lang3.BooleanUtils.isTrue;
 import static org.apache.commons.lang3.StringUtils.isEmpty;
 
@@ -6,7 +8,7 @@ public class StringUtils {
         if(isEmpty(str)) {
             return false;
         }
-        int number = Integer.valueOf(str);
+        int number = Integer.parseInt(str);
 
         return isTrue(number > 0);
     }
